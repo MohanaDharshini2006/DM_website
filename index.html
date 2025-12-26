@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoNex Innovations | Digital Marketing Agency</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CUSTOM STYLES -->
+  <style>
+    :root {
+      --accent: #22C55E; /* GoNex Green */
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #e5e7eb;
+    }
+
+    .hero-bg {
+      background: radial-gradient(
+        circle at top,
+        #052E16 0%,
+        #020617 45%,
+        #000000 100%
+      );
+    }
+
+    .accent {
+      color: var(--accent);
+    }
+
+    .card-hover {
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(34,197,94,0.15);
+    }
+
+    /* Section outline removed: keep rounded corners but no border or blinking animation */
+    section {
+      position: relative;
+      border-radius: 12px;
+      transition: none;
+    }
+
+    section:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    section:hover {
+      /* intentionally empty to remove hover outline/blink */
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 bg-transparent">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold accent">GoNex Innovations</h1>
+    <div class="hidden md:flex space-x-8 font-medium text-white">
+      <a href="#home" class="border-b-2 border-green-500">Home</a>
+      <a href="#about" class="hover:text-green-500">About</a>
+      <a href="#services" class="hover:text-green-500">Services</a>
+      <a href="#contact" class="hover:text-green-500">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" tabindex="0" class="hero-bg min-h-screen flex items-center justify-center text-center py-20">
+  <div class="px-6 max-w-3xl">
+    <h1 class="text-white text-6xl md:text-7xl font-bold mb-8 leading-tight">Smart Strategies. Creative Content. Measurable Growth.</h1>
+    <p class="text-white text-xl md:text-2xl mb-12 font-light">
+      We help brands grow, engage, and convert with result-driven digital marketing solutions.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+      <a href="#contact" class="bg-green-500 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition inline-block">Get Started</a>
+      <a href="#services" class="border-2 border-green-500 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-green-500 hover:text-black transition inline-block">Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" tabindex="0" class="py-20 bg-black">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">About GoNex Innovations</h2>
+    <p class="text-lg text-gray-300 leading-relaxed">At GoNex Innovations, we deliver result-driven digital marketing solutions that help brands grow, engage, and convert in today's competitive digital landscape. Our approach combines creativity, strategy, and data to build a strong and lasting online presence.</p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" tabindex="0" class="py-20 bg-[#020617]">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center accent mb-12">
+      Our Digital Marketing Solutions
+    </h3>
+
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="service-card bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-6 rounded-lg text-center hover:border-green-500/80 transition">
+        <div class="flex justify-center mb-4">
+          <div class="text-4xl">📸</div>
+        </div>
+        <h4 class="font-bold text-white uppercase tracking-wide mb-3 text-sm">Social Media Management</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">Professional management of Instagram and LinkedIn profiles with consistent, engaging, and brand-focused content.</p>
+      </div>
+
+      <div class="service-card bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-6 rounded-lg text-center hover:border-green-500/80 transition">
+        <div class="flex justify-center mb-4">
+          <div class="text-4xl">📱</div>
+        </div>
+        <h4 class="font-bold text-white uppercase tracking-wide mb-3 text-sm">Social Media Advertising</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">Targeted Instagram and LinkedIn ad campaigns designed to reach the right audience, increase visibility, and generate quality leads.</p>
+      </div>
+
+      <div class="service-card bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-6 rounded-lg text-center hover:border-green-500/80 transition">
+        <div class="flex justify-center mb-4">
+          <div class="text-4xl">🎨</div>
+        </div>
+        <h4 class="font-bold text-white uppercase tracking-wide mb-3 text-sm">Branding & Identity Design</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">Building a strong visual identity through creative designs that reflect your brand values and leave a lasting impression.</p>
+      </div>
+
+      <div class="service-card bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-6 rounded-lg text-center hover:border-green-500/80 transition">
+        <div class="flex justify-center mb-4">
+          <div class="text-4xl">✏️</div>
+        </div>
+        <h4 class="font-bold text-white uppercase tracking-wide mb-3 text-sm">Content Creation</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">High-quality posts, reels, stories, and visuals crafted to attract attention, boost engagement, and drive action.</p>
+      </div>
+
+      <div class="service-card bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-6 rounded-lg text-center hover:border-green-500/80 transition">
+        <div class="flex justify-center mb-4">
+          <div class="text-4xl">🎬</div>
+        </div>
+        <h4 class="font-bold text-white uppercase tracking-wide mb-3 text-sm">Creative Posters & Video Editing</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">Eye-catching posters, promotional videos, and reels that enhance brand awareness and storytelling.</p>
+      </div>
+
+      <div class="service-card bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-6 rounded-lg text-center hover:border-green-500/80 transition">
+        <div class="flex justify-center mb-4">
+          <div class="text-4xl">📊</div>
+        </div>
+        <h4 class="font-bold text-white uppercase tracking-wide mb-3 text-sm">Content Strategy & Planning</h4>
+        <p class="text-gray-400 text-xs leading-relaxed">Data-driven content planning and strategy to support engagement, growth, and long-term performance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- ADDITIONAL MARKETING SOLUTIONS -->
+      <section id="additional" tabindex="0" class="py-16 bg-[#020617]">
+        <div class="max-w-7xl mx-auto px-6">
+          <h3 class="text-3xl font-bold text-center accent mb-6">Additional Marketing Solutions</h3>
+          <div class="mt-6 grid md:grid-cols-3 gap-6">
+            <div class="service-card bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-6 rounded-lg hover:border-green-500/80 transition">
+              <h4 class="text-lg font-semibold text-white mb-3">Search Engine Optimization (SEO)</h4>
+              <p class="text-gray-400 text-sm">Improve your website's visibility on Google with keyword optimization, on-page SEO, technical SEO, and content strategies that drive organic traffic and long-term growth.</p>
+            </div>
+            <div class="service-card bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-6 rounded-lg hover:border-green-500/80 transition">
+              <h4 class="text-lg font-semibold text-white mb-3">Email Marketing</h4>
+              <p class="text-gray-400 text-sm">Personalized and automated email campaigns to nurture leads, retain customers, promote offers, and build strong customer relationships.</p>
+            </div>
+            <div class="service-card bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-6 rounded-lg hover:border-green-500/80 transition">
+              <h4 class="text-lg font-semibold text-white mb-3">CRM Setup & Management</h4>
+              <p class="text-gray-400 text-sm">Customer Relationship Management solutions to track leads, manage customer data, automate follow-ups, and improve sales efficiency.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE -->
+      <section id="why" tabindex="0" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+          <h3 class="text-4xl font-bold text-white mb-16 text-center">Why Choose GoNex Innovations?</h3>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-8 rounded-lg hover:border-green-500/80 transition">
+              <h4 class="text-xl font-bold text-white mb-3">Platform-Specific Expertise</h4>
+              <p class="text-gray-400">Deep expertise in Instagram & LinkedIn marketing strategies tailored to your business needs.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-8 rounded-lg hover:border-green-500/80 transition">
+              <h4 class="text-xl font-bold text-white mb-3">Long-Term Brand Growth</h4>
+              <p class="text-gray-400">We focus on sustainable growth strategies that build lasting value for your brand.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-8 rounded-lg hover:border-green-500/80 transition">
+              <h4 class="text-xl font-bold text-white mb-3">Customer Satisfaction</h4>
+              <p class="text-gray-400">Your success is our priority - we measure our success by your growth and satisfaction.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-green-500/15 to-transparent border border-green-500/60 p-8 rounded-lg hover:border-green-500/80 transition">
+              <h4 class="text-xl font-bold text-white mb-3">Affordable & Scalable</h4>
+              <p class="text-gray-400">Solutions that fit your budget and grow with your business at every stage.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- CONTACT -->
+  <section id="contact" tabindex="0" class="py-20 bg-black">
+  <div class="max-w-xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold accent mb-6">Let’s Build Your Digital Presence</h3>
+
+    <div class="bg-[#020617] p-8 rounded-xl border border-green-500/20">
+      <p class="mb-3">Partner with GoNex Innovations to turn your digital presence into measurable business growth.</p>
+      <p class="mb-3">📞 <span class="accent">+91 9363375306</span></p>
+      <p class="mb-6">📧 <span class="accent">gonexinnovationsit@gmail.com</span></p>
+
+      <form class="space-y-4" method="post" action="#">
+        <input name="name" type="text" class="w-full p-3 rounded bg-black border border-gray-700 text-white" placeholder="Name" required>
+        <input name="email" type="email" class="w-full p-3 rounded bg-black border border-gray-700 text-white" placeholder="Email" required>
+        <textarea name="message" class="w-full p-3 rounded bg-black border border-gray-700 text-white" placeholder="Message" required></textarea>
+        <button type="submit" class="w-full bg-green-500 text-black py-3 rounded font-semibold hover:bg-green-400">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black py-16 text-gray-400 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-12 mb-12">
+      <!-- Company Info -->
+      <div>
+        <h3 class="text-2xl font-bold text-white mb-4"><span class="accent">GONEX</span> INNOVATIONS</h3>
+        <p class="text-gray-400 mb-6">Digital innovations powered by GoNex – crafting modern solutions for businesses that want to move faster.</p>
+        <div class="space-y-2 text-sm">
+          <p><span class="font-semibold text-white">Location:</span> Tirupur, Tamil Nadu</p>
+          <p><span class="font-semibold text-white">Phone:</span> +91 9363375306</p>
+          <p><span class="font-semibold text-white">Email:</span> gonexinnovationsit@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="text-xl font-bold text-white mb-6">Services</h4>
+        <ul class="space-y-3 text-gray-400">
+          <li class="flex items-center"><span class="text-green-500 mr-2">›</span> Social Media Management</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">›</span> Social Media Advertising</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">›</span> Branding & Identity Design</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">›</span> Content Creation</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">›</span> Video Editing</li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-xl font-bold text-white mb-6">Quick Links</h4>
+        <ul class="space-y-3 text-gray-400">
+          <li class="flex items-center"><span class="text-green-500 mr-2">›</span> <a href="#home" class="hover:text-green-500 transition">Home</a></li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">›</span> <a href="#about" class="hover:text-green-500 transition">About Us</a></li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">›</span> <a href="#services" class="hover:text-green-500 transition">Services</a></li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">›</span> <a href="#contact" class="hover:text-green-500 transition">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+      <p>© 2025 GoNex Innovations. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
